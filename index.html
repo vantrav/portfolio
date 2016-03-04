@@ -2,8 +2,8 @@
 @Author: Vipul Anand <vipul>
 @Date:   2016-03-01T13:21:21+05:30
 @Email:  9896918475v@gmail.com
-@Last modified by:   vipul
-@Last modified time: 2016-03-04T09:26:12+05:30
+@Last modified by:   vantrav
+@Last modified time: 2016-03-04T11:11:50+05:30
 -->
 
 <!DOCTYPE html>
@@ -16,66 +16,69 @@
     <link rel="stylesheet" href="stylesheets/font-awesome.css" media="screen" charset="utf-8">
     <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <style media="screen">
-    body {
-      min-height: 2000px;
-      padding-top: 70px;ß
-    }
-    .jbtron {
-      background-image: url("https://placehold.it/2000x800/4E342E/ffffff?text= ˙");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 0;
-      width: 100%;
-      height: 100vh;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-      -ms-flex-align: center;
-      align-items: center;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      color: white;
-    }
-    .greyed {
-      background-blend-mode: saturation;
-      -webkit-filter: brightness(34%) opacity(89%) grayscale(100%);
-      filter:brightness(34%) opacity(89%) grayscale(100%);
-      -webkit-transition: all 200ms ease-in-out;
-      transition: all 200ms ease-in-out;
-    }
-    .greyed:hover {
-      background-blend-mode: normal;
-      -webkit-filter: brightness(80%) opacity(80%) grayscale(30%);
-      filter: brightness(80%) opacity(80%) grayscale(30%);
-    }
-    .politicalMedia {
-      font-size: 9vw;
-      font-family: sans-serif;
-    }
-    .cntrkon {
-      text-align: center;
-      padding-bottom: 20px;
-      margin-top: 0;
-    }
-    .col-md-3 {
-      padding-top: 15px;
-    }
+      body {
+        min-height: 2000px;
+        padding-top: 70px;
+        ß;
+      }
+      .jbtron {
+        background-image: url("https://placehold.it/2000x800/4E342E/ffffff?text= ˙");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0;
+        width: 100%;
+        height: 100vh;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        color: white;
+      }
+      .greyed {
+        background-blend-mode: saturation;
+        -webkit-filter: brightness(34%) opacity(89%) grayscale(100%);
+        filter:brightness(34%) opacity(89%) grayscale(100%);
+        -webkit-transition: all 200ms ease-in-out;
+        transition: all 200ms ease-in-out;
+      }
+      .greyed:hover {
+        background-blend-mode: normal;
+        -webkit-filter: brightness(80%) opacity(80%) grayscale(30%);
+        filter:brightness(80%) opacity(80%) grayscale(30%);
+      }
+      .politicalMedia {
+        font-size: 9vw;
+        font-family: sans-serif;
+      }
+      .cntrkon {
+        text-align: center;
+        padding-bottom: 20px;
+        margin-top: 0;
+      }
+      .col-md-3 {
+        padding-top: 15px;
+      }
+
     </style>
   </head>
-  <body><!--data-spy="scroll" data-target=".navbar" data-offset="50"-->
+  <body>
+    <!--data-spy="scroll" data-target=".navbar" data-offset="50"-->
     <!--Navigation bar-->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -106,23 +109,53 @@
           </ul>
         </div>
       </div>
-    </nav><!--/-->
+    </nav>
+    <!--/-->
     <!--Free Code Camp inspires for What it is all about -->
     <div class="jumbotron-bg jbtron" id="v">
-      <h1 class="politicalMedia"><i class="fa fa-fire"></i></h1>
+      <h1 class="politicalMedia">
+        <i class="fa fa-fire"></i>
+      </h1>
       <div class="jumbotron-bg">
         <h3>Thanks to all Free Code Campers who help each other learn</h3>
       </div>
     </div>
     <!--Porfolio submission for FCC Frontend Bonfire -->
     <div class="container-fluid jumbotron" id="portfolio">
-      <h3 class="cntrkon">Portfolio - A Bonfire Challenge at FCC <summary><sub>Frontend Design</sub></summary></h3>
+      <h3 class="cntrkon">Portfolio - A Bonfire Challenge at FCC
+        <summary>
+          <sub>Frontend Design</sub>
+        </summary>
+      </h3>
       <div class="row cntrkon">
         <div class="col-sm-6 col-md-3">
           <div class="thumbnail">
             <img class="greyed" src="images/me.jpg" alt="...">
             <div class="caption">
               <h3>Vantrav's portfolio</h3>
+              <!--Dropdown for downloading Portfolio code-->
+              <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Download Portfolio
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="https://github.com/vantrav/portfolio/zipball/master">Download <strong>ZIP File</strong>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/vantrav/portfolio/tarball/master">Download <strong>TAR Ball</strong>
+                    </a>
+                  </li>
+                  <li role="separator" class="divider"></li>
+                  <li>
+                    <a href="https://github.com/vantrav/portfolio" target="_blank">View On <strong>GitHub</strong>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!--/ Dropdown-->
             </div>
           </div>
         </div>
@@ -177,7 +210,7 @@
       <p>
         Continued learning!, freedom of coding, knowledge share and wierd relevance.
       </p>
-      <!--About Vantrav-->
+      <!--About Vantrav Portfolio-->
       <div class="panel panel-default">
         <div class="panel-heading">
           <h3 class="panel-title">Location Kurukshetra, Haryana India</h3>
@@ -189,7 +222,9 @@
               <div class="thumbnail">
                 <img src="images/bsrvr.jpg" alt=""/>
                 <div class="panel-footer">
-                  <caption><a href="https://en.wikipedia.org/wiki/Brahma_Sarovar">Braham Sarovar</a> (Festival night at ancient lake)</caption>
+                  <caption>
+                    <a href="https://en.wikipedia.org/wiki/Brahma_Sarovar">Braham Sarovar</a>
+                    (Festival night at ancient lake)</caption>
                 </div>
               </div>
             </div>
@@ -206,6 +241,8 @@
           </div>
         </div>
       </div>
+      <!--                 /About Vantrav Portfolio                    -->
+      <!--Contact Section -->
       <div class="jumbotron cntrkon" id="contact">
         <h3>CONTAKT</h3>
         <p>
@@ -217,36 +254,36 @@
           </a>
         </p>
       </div>
-      <footer class="navbar navbar-default-bg navbar-fixed-bottom"></footer>
+      <!--/-->
+      <footer class="navbar navbar-default-bg"></footer>
       <script type="text/javascript" src="javascripts/jquery-min.js"></script>
       <script type="text/javascript" src="javascripts/bootstrap.js"></script>
       <script type="text/javascript" src="javascripts/bootstrap-sprockets.js"></script>
       <!--<script type="text/javascript" src="javascripts/bootstrap/button.js"></script>-->
       <script>
-$(document).ready(function(){
-// Add scrollspy to <body>
-$('body').scrollspy({target: ".navbar", offset: 50});
+        $(document).ready(function () {
+          // Add scrollspy to <body>
+          $('body').scrollspy({target: ".navbar", offset: 50});
 
-// Add smooth scrolling on all links inside the navbar
-$("#vantrav-nav a").on('click', function(event) {
+          // Add smooth scrolling on all links inside the navbar
+          $("#vantrav-nav a").on('click', function (event) {
 
-  // Prevent default anchor click behavior
-  event.preventDefault();
+            // Prevent default anchor click behavior
+            event.preventDefault();
 
-  // Store hash
-  var pp = this.hash;
+            // Store hash
+            var pp = this.hash;
 
-  // Using jQuery's animate() method to add smooth page scroll
-  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-  $('html, body').animate({
-    scrollTop: $(pp).offset().top
-  }, 800, function(){
+            // Using jQuery's animate() method to add smooth page scroll The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(pp).offset().top
+            }, 800, function () {
 
-    // Add hash (#) to URL when done scrolling (default click behavior)
-    window.location.pp = pp;
-  });
-});
-});
-</script>
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.pp = pp;
+            });
+          });
+        });
+      </script>
     </body>
   </html>

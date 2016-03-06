@@ -3,11 +3,12 @@
 @Date:   2016-03-01T13:21:21+05:30
 @Email:  9896918475v@gmail.com
 @Last modified by:   vantrav
-@Last modified time: 2016-03-04T12:09:35+05:30
+@Last modified time: 2016-03-06T11:30:27+05:30
 -->
 
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="utf-8">
     <title>Portfolio</title>
@@ -19,8 +20,8 @@
       body {
         min-height: 2000px;
         padding-top: 70px;
-        ß;
       }
+
       .jbtron {
         background-image: url("https://placehold.it/2000x800/4E342E/ffffff?text= ˙");
         background-repeat: no-repeat;
@@ -50,33 +51,38 @@
         flex-wrap: wrap;
         color: white;
       }
+
       .greyed {
         background-blend-mode: saturation;
         -webkit-filter: brightness(34%) opacity(89%) grayscale(100%);
-        filter:brightness(34%) opacity(89%) grayscale(100%);
+        filter: brightness(34%) opacity(89%) grayscale(100%);
         -webkit-transition: all 200ms ease-in-out;
         transition: all 200ms ease-in-out;
       }
+
       .greyed:hover {
         background-blend-mode: normal;
         -webkit-filter: brightness(80%) opacity(80%) grayscale(30%);
-        filter:brightness(80%) opacity(80%) grayscale(30%);
+        filter: brightness(80%) opacity(80%) grayscale(30%);
       }
+
       .politicalMedia {
         font-size: 9vw;
         font-family: sans-serif;
       }
+
       .cntrkon {
         text-align: center;
         padding-bottom: 20px;
         margin-top: 0;
       }
+
       .col-md-3 {
         padding-top: 15px;
       }
-
     </style>
   </head>
+
   <body>
     <!--data-spy="scroll" data-target=".navbar" data-offset="50"-->
     <!--Navigation bar-->
@@ -89,7 +95,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#v"><img src="images/vantrav.png" alt="Vantrav"/></a>
+          <a class="navbar-brand" href="#v"><img src="images/vantrav.png" alt="Vantrav" /></a>
         </div>
         <div class="navbar-collapse collapse" id="vantrav-nav">
           <ul class="nav navbar-nav navbar-right">
@@ -176,7 +182,7 @@
         </div>
         <div class="col-sm-6 col-md-3">
           <div class="thumbnail">
-            <img class="greyed" src="images/portf.png" alt="..."/>
+            <img class="greyed" src="images/portf.png" alt="..." />
             <div class="caption">
               <h3>Twitch challanges the dev in you!</h3>
             </div>
@@ -190,7 +196,7 @@
         </div>
         <div class="col-sm-6 col-md-3">
           <div class="thumbnail">
-            <img class="greyed" src="images/leafy.png" alt="..."/>
+            <img class="greyed" src="images/leafy.png" alt="..." />
             <div class="caption">
               <h3>Wikipedia Search</h3>
             </div>
@@ -220,24 +226,35 @@
           <div class="row">
             <div class="col-sm-4 col-md-6">
               <div class="thumbnail">
-                <img src="images/bsrvr.jpg" alt=""/>
+                <img src="images/bsrvr.jpg" alt="" />
                 <div class="panel-footer">
                   <caption>
-                    <a href="https://en.wikipedia.org/wiki/Brahma_Sarovar">Braham Sarovar</a>
-                    (Festival night at ancient lake)</caption>
+                    <a href="https://en.wikipedia.org/wiki/Brahma_Sarovar">Braham Sarovar</a> (Festival night at ancient lake)</caption>
                 </div>
               </div>
             </div>
 
             <div class="col-sm-4 col-md-6">
               <div class="thumbnail">
-                <img src="images/mtrl.png" alt=""/>
+                <img src="images/mtrl.png" alt="" />
                 <div class="panel-footer">
                   <caption>And Atom material theme</caption>
                 </div>
               </div>
             </div>
+            <!--Some thing about what is done with html outline struction-->
+            <div class="col-sm-4 col-md-6">
+              <div class="thumbnail">
+                <p>
+                  This portfolio has wierd html outline structure, the portfolio page uses four
+                  <code>div class="jumbotron-bg" and "jumbotron"</code>, wrapped by a <code>container</code>
+                  Why <code>jumbotron</code>? here is what is noticeable about it
+                  <code>h3</code> has different sizes than in <code>container</code>
+                </p>
+              </div>
+            </div>
 
+            <!--/-->
           </div>
         </div>
       </div>
@@ -262,12 +279,15 @@
       <script src="javascripts/scale.fix.js"></script>
       <!--<script type="text/javascript" src="javascripts/bootstrap/button.js"></script>-->
       <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
           // Add scrollspy to <body>
-          $('body').scrollspy({target: ".navbar", offset: 50});
+          $('body').scrollspy({
+            target: ".navbar",
+            offset: 50
+          });
 
           // Add smooth scrolling on all links inside the navbar
-          $("#vantrav-nav a").on('click', function (event) {
+          $("#vantrav-nav a").on('click', function(event) {
 
             // Prevent default anchor click behavior
             event.preventDefault();
@@ -278,7 +298,7 @@
             // Using jQuery's animate() method to add smooth page scroll The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
             $('html, body').animate({
               scrollTop: $(pp).offset().top
-            }, 800, function () {
+            }, 800, function() {
 
               // Add hash (#) to URL when done scrolling (default click behavior)
               window.location.pp = pp;
@@ -286,5 +306,6 @@
           });
         });
       </script>
-    </body>
-  </html>
+  </body>
+
+</html>
